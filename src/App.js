@@ -31,26 +31,18 @@ const App = () => {
     }
 
     const handledEditar = (item) => {
-
         handleShow();
         setNombre(item.Nombre);
         setApellidos(item.Apellidos);
         setId(item.id);
-
     }
 
     const handleUpdate = () => {
-
-        console.log(id);
-        console.log(nombre);
-        console.log(apellidos);
-        //console.log(temporal)
-
-        setDatos(datos.map( item => item.id === id ?
+        setDatos(datos.map( item =>
+            item.id === id ?
             { id: id, Nombre: nombre, Apellidos: apellidos } :
             item ));
-        handleClose();
-
+        handleClose()
     }
 
     const handledEliminar = (id) => {
