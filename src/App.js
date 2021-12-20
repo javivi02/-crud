@@ -95,6 +95,7 @@ const App = () => {
             </table>
 
 
+            {/*Modal de edicion*/}
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
